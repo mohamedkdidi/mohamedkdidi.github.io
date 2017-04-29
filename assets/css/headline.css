@@ -56,11 +56,13 @@ h5, h6 {
 .cd-headline {
   font-size: 3rem;
   line-height: 1.2;
+  color: #26C6DA;
+  font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
     font-size: 4.4rem;
-    font-weight: 300;
+    font-weight: 600;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -73,6 +75,7 @@ h5, h6 {
   display: inline-block;
   position: relative;
   text-align: left;
+  color: #cfe126;
 }
 .cd-words-wrapper b {
   display: inline-block;
