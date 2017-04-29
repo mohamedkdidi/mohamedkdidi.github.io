@@ -659,7 +659,6 @@ Intro Style
   -moz-osx-font-smoothing: grayscale;
 }
 .intro-content h1 {
-  font-size: 10rem;
   color: #ffffff;
 }
 .intro-content p {
@@ -671,7 +670,6 @@ Intro Style
   margin: 1em 0;
   color: #ffffff;
   display: table;
-  width: 700px;
   margin: 50px auto !important;
 }
 .intro-content p:before{
@@ -679,7 +677,7 @@ Intro Style
     position: relative;
     display: block;
     height: 2px;
-    width: 450px;
+    width: 45%;
     margin: 10px auto;
     background-color: #fff;
 }
@@ -688,7 +686,7 @@ Intro Style
     position: relative;
     display: block;
     height: 2px;
-    width: 450px;
+    width: 45%;
     margin: 10px auto;
     background-color: #fff;
 }
@@ -712,8 +710,35 @@ Intro Style
     font-size: 26px;
     margin: 1.5em 0 1.9em;
   }
-}
+  .intro-content p:after,.intro-content p:before{
+    width: 100%;
+  }
+  
 
+}
+@media only screen and (max-width: 668px) {
+  .intro-content p:after,.intro-content p:before{
+    width: 65%;
+  }
+  .intro-content p {
+  margin: 0px auto !important;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .intro-content p:after,.intro-content p:before{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .intro-content p:after,.intro-content p:before{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 200px) {
+  .intro-content p:after,.intro-content p:before{
+    width: 80%;
+  }
+}
 .intro-content h1,
 .intro-content h1 span,
 .intro-content p,
@@ -812,9 +837,13 @@ Cut
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  width: 10%;
+  /*width: 10%;
+  display: initial;*/
 }
-
+.cut.intro-content > div {
+  padding-top: 30px; 
+  padding-bottom: 30px;
+}
 .cut.intro-content .btn {
   -webkit-animation-name: cd-slide-left-btn;
   -moz-animation-name: cd-slide-left-btn;
