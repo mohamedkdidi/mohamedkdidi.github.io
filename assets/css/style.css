@@ -155,6 +155,49 @@ a:focus {
   background: #f5f5f5;
 }
 
+.btn-xl {
+  color: white;
+  background-color: #e91e63;
+  border-color: #e91e63;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: white;
+  background-color: #67bf00;
+  border-color: #639e1d;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active{
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+.btn-xl .badge {
+  color: #e91e63;
+  background-color: white;
+}
+
 .portfolio {
   padding:0 !important;
   margin:0 !important;
